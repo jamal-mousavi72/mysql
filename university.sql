@@ -1,17 +1,17 @@
 /*
  Navicat Premium Dump SQL
 
- Source Server         : myProjects
+ Source Server         : Mysql
  Source Server Type    : MySQL
- Source Server Version : 100432 (10.4.32-MariaDB)
+ Source Server Version : 100428 (10.4.28-MariaDB)
  Source Host           : localhost:3306
  Source Schema         : univercity
 
  Target Server Type    : MySQL
- Target Server Version : 100432 (10.4.32-MariaDB)
+ Target Server Version : 100428 (10.4.28-MariaDB)
  File Encoding         : 65001
 
- Date: 13/09/2025 08:47:19
+ Date: 14/09/2025 02:44:49
 */
 
 SET NAMES utf8mb4;
@@ -39,6 +39,24 @@ INSERT INTO `coures` VALUES (6, 'SQL');
 INSERT INTO `coures` VALUES (7, 'NoSQL');
 INSERT INTO `coures` VALUES (8, 'NewSQL');
 INSERT INTO `coures` VALUES (9, 'Math');
+
+-- ----------------------------
+-- Table structure for my_tbl
+-- ----------------------------
+DROP TABLE IF EXISTS `my_tbl`;
+CREATE TABLE `my_tbl`  (
+  `id` int NULL DEFAULT NULL,
+  `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_persian_ci NULL DEFAULT NULL,
+  `country` varchar(2) CHARACTER SET utf8 COLLATE utf8_persian_ci NULL DEFAULT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_persian_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of my_tbl
+-- ----------------------------
+INSERT INTO `my_tbl` VALUES (1, 'Sam', 'US');
+INSERT INTO `my_tbl` VALUES (2, 'Sara', 'IR');
+INSERT INTO `my_tbl` VALUES (3, 'Reza', 'UE');
+INSERT INTO `my_tbl` VALUES (5, 'Maryam', 'Gr');
 
 -- ----------------------------
 -- Table structure for professores
